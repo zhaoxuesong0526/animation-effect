@@ -1,0 +1,43 @@
+
+.App-header {
+  width: 100%;
+  border-bottom: 1px solid #eee ;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding:15px 20px;
+  .logo{
+    display: inline-block;
+    width: 150px;
+    
+    img{
+      width: 100%;
+    }
+   
+  }
+  .header{
+    display: inline-block;
+    margin-left: 50px;
+    .active{
+      color: #ff6a00;
+    }
+    a{
+      display: inline-block;
+      text-decoration: none;
+      padding: 15px;
+      min-width: 80px;
+      color: #383838;
+      text-align: center;
+      &:hover{
+       color: #ff6a00;
+      }
+    }
+  }
+}
+.App-container{
+  padding: 20px;
+}
+iframe{
+  width:100%; 
+  height:calc(100vh - 85px);
+}
