@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect, NavLink } from "react-router-dom"
 import './App.scss'
 import logo from './logo.png';
-
+import 'antd/dist/antd.css';
 import Home from "./page/home"
 import Button from "./page/button"
 import Container from "./page/container"
