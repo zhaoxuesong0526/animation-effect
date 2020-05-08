@@ -22,44 +22,41 @@ export default class Button extends React.Component {
           <Content className="site-layout-background">
             {this.state.curIndex === 0 && (
               <div>
-                0
-                 <iframe
-                ref={(ref) => {
-                  this.iframe = ref;
-                }}
-                id="iframe"
-                className="iframe"
-                title="xxx"
-                src="//ianlunn.github.io/Hover/"
-                frameBorder="0"
-              ></iframe>
+                <iframe
+                  ref={(ref) => {
+                    this.iframe = ref;
+                  }}
+                  id="iframe"
+                  className="iframe"
+                  title="xxx"
+                  src="//ianlunn.github.io/Hover/"
+                  frameBorder="0"
+                ></iframe>
               </div>
             )}
             {this.state.curIndex === 1 && (
               <div>
-                1
-                  <iframe
-                ref={(ref) => {
-                  this.iframe = ref;
-                }}
-                id="iframe"
-                className="iframe"
-                title="xxx"
-                src="//ianlunn.github.io/Hover/"
-                frameBorder="0"
-              ></iframe>
+                <iframe
+                  ref={(ref) => {
+                    this.iframe = ref;
+                  }}
+                  id="iframe"
+                  className="iframe"
+                  title="xxx"
+                  src="//ianlunn.github.io/Hover/"
+                  frameBorder="0"
+                ></iframe>
               </div>
-            
             )}
           </Content>
         </Layout>
       </div>
     );
   }
-  handlerCick = (item,index) => {
+  handlerCick = (item, index) => {
     console.log(item);
     this.setState({
-      curIndex:index
-    })
+      curIndex: index
+    });
   };
 }
