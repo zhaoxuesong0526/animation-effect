@@ -7,7 +7,7 @@ export default class Text extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuList: ['效果一', '效果二', '效果三'],
+      menuList: ['效果一', '效果二', '效果三', '效果四'],
       curIndex: 0
     };
   }
@@ -52,18 +52,6 @@ export default class Text extends React.Component {
                   </svg>
                 </a>
               </section>
-               <div class="wrapper tabled">
-                <div class="stage" id="page1">
-                  <div class="middled">
-                 <div class="link-1">
-                   <a href="#">
-                     <span class="thin">link</span><span class="thick">one</span>
-                   </a>
-                   <p>underline slide</p>    
-                 </div>
-               </div>
-              </div>   
-              </div>
               </div>
           )}
             {this.state.curIndex === 1 && (
@@ -81,7 +69,7 @@ export default class Text extends React.Component {
                 ></iframe>
               </div>
           )}
-            {this.state.curIndex ===2 && (
+          {this.state.curIndex ===2 && (
             <div>
               {/* http://www.jq22.com/jquery-info21488 */}
                 <iframe
@@ -92,6 +80,20 @@ export default class Text extends React.Component {
                   className="iframe"
                   title="xxx"
                   src="http://www.jq22.com/demo/jquerycounterup201905121719"
+                  frameBorder="0"
+                ></iframe>
+              </div>
+          )}
+          {this.state.curIndex ===3 && (
+            <div>
+                <iframe
+                  ref={(ref) => {
+                    this.iframe = ref;
+                  }}
+                  id="iframe"
+                  className="iframe"
+                  title="xxx"
+                  src="https://onaircode.com/text-hover-effects-css-animation-snippet/"
                   frameBorder="0"
                 ></iframe>
               </div>
