@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.scss';
 import Slider from '../../components/slider';
 import { Layout } from 'antd';
 const { Content } = Layout;
@@ -7,7 +6,7 @@ export default class Button extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuList: ['效果一', '效果二', '效果三'],
+      menuList: ['效果一'],
       curIndex: 0
     };
   }
@@ -20,7 +19,7 @@ export default class Button extends React.Component {
             handlerCick={this.handlerCick}
           ></Slider>
           <Content className="site-layout-background">
-           {this.state.curIndex === 0 && (
+            {this.state.curIndex === 0 && (
               <div>
                 <iframe
                   ref={(ref) => {
@@ -29,7 +28,7 @@ export default class Button extends React.Component {
                   id="iframe"
                   className="iframe"
                   title="xxx"
-                  src="//ianlunn.github.io/Hover/"
+                  src="https://tympanus.net/Development/IconHoverEffects/#set-9"
                   frameBorder="0"
                 ></iframe>
               </div>
@@ -43,21 +42,7 @@ export default class Button extends React.Component {
                   id="iframe"
                   className="iframe"
                   title="xxx"
-                  src="https://tympanus.net/Development/CreativeButtons/"
-                  frameBorder="0"
-                ></iframe>
-              </div>
-            )}
-            {this.state.curIndex === 2 && (
-              <div>
-                <iframe
-                  ref={(ref) => {
-                    this.iframe = ref;
-                  }}
-                  id="iframe"
-                  className="iframe"
-                  title="xxx"
-                  src="https://codepen.io/davidicus/full/emgQKJ"
+                  src=""
                   frameBorder="0"
                 ></iframe>
               </div>
@@ -66,6 +51,7 @@ export default class Button extends React.Component {
         </Layout>
       </div>
     );
+      
   }
   handlerCick = (item, index) => {
     console.log(item);

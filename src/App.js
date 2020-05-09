@@ -11,6 +11,7 @@ import List from "./page/list"
 import Nav from "./page/nav"
 import Slider from "./page/slider"
 import Text from "./page/text"
+import Icon from "./page/icon"
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
             <NavLink to="/nav">Nav</NavLink>
             <NavLink to="/slider">Slider</NavLink>
             <NavLink to="/text">Text</NavLink>
+            <NavLink to="/icon">Icon</NavLink>
           </header>
         </div>
         <div className="App-container">
@@ -41,8 +43,8 @@ function App() {
           <Route path="/nav"  component={Nav} ></Route>
           <Route path="/slider"  component={Slider} ></Route>
           <Route path="/text" component={Text} ></Route>
+          <Route path="/icon" component={Icon} ></Route>
         </Switch>
-
         </div>
       </BrowserRouter>
     </div>

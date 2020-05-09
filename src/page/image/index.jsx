@@ -6,7 +6,7 @@ export default class Image extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuList: ['效果一'],
+      menuList: ['悬停出现遮罩和标题', '悬停缩放'],
       curIndex: 0
     };
   }
@@ -19,7 +19,7 @@ export default class Image extends React.Component {
             handlerCick={this.handlerCick}
           ></Slider>
           <Content className="site-layout-background">
-            <h1>123</h1>
+            部分效果同list
             {this.state.curIndex === 0 && (
               <div>
                 <iframe
@@ -30,11 +30,25 @@ export default class Image extends React.Component {
                   className="iframe"
                   title="xxx"
                   src="https://tympanus.net/Development/HoverEffectIdeas/"
+                  
                   frameBorder="0"
                 ></iframe>
               </div>
             )}
-          
+            {this.state.curIndex === 1 && (
+              <div>
+                <iframe
+                  ref={(ref) => {
+                    this.iframe = ref;
+                  }}
+                  id="iframe"
+                  className="iframe"
+                  title="xxx"
+                  src="https://codepen.io/AdamCCFC/embed/WvzBKq/?theme-id=modal"
+                  frameBorder="0"
+                ></iframe>
+              </div>
+            )}
           </Content>
         </Layout>
       </div>
