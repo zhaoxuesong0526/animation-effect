@@ -6,7 +6,7 @@ export default class Nav extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      menuList: ['效果一', '效果二', '效果三'],
+      menuList: ['效果一', '效果二', '效果三', '效果四', '效果五'],
       curIndex: 0
     };
   }
@@ -35,21 +35,61 @@ export default class Nav extends React.Component{
               </div>
             )}
              {this.state.curIndex === 1 && (
-               
               <div>
-                {/* <iframe
+                <iframe
                   ref={(ref) => {
                     this.iframe = ref;
                   }}
                   id="iframe"
                   className="iframe"
                   title="xxx"
-                  src="./nav.html"
+                  src="https://demo.demohuo.top/jquery/23/2348/demo/"
                   frameBorder="0"
-                ></iframe> */}
+                ></iframe>
               </div>
             )}
-           
+            {this.state.curIndex === 2 && (
+              <div>
+                <iframe
+                  ref={(ref) => {
+                    this.iframe = ref;
+                  }}
+                  id="iframe"
+                  className="iframe"
+                  title="xxx"
+                  src="http://www.htmleaf.com/Demo/2014100437.html"
+                  frameBorder="0"
+                ></iframe>
+              </div>
+            )}
+            {this.state.curIndex === 3 && (
+              <div>
+                <iframe
+                  ref={(ref) => {
+                    this.iframe = ref;
+                  }}
+                  id="iframe"
+                  className="iframe"
+                  title="xxx"
+                  src="http://www.jq22.com/webqd6255"
+                  frameBorder="0"
+                ></iframe>
+              </div>
+            )}
+            {this.state.curIndex === 4 && (
+              <div>
+                <iframe
+                  ref={(ref) => {
+                    this.iframe = ref;
+                  }}
+                  id="iframe"
+                  className="iframe"
+                  title="xxx"
+                  src="http://www.jq22.com/yanshi11012"
+                  frameBorder="0"
+                ></iframe>
+              </div>
+            )}
           </Content>
         </Layout>
       </div>

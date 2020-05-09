@@ -2,24 +2,23 @@ import React from 'react';
 import Slider from '../../components/slider';
 import { Layout } from 'antd';
 const { Content } = Layout;
-export default class Image extends React.Component {
+export default class Button extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuList: ['悬停出现遮罩和标题', '悬停缩放'],
+      menuList: ['效果一'],
       curIndex: 0
     };
   }
   render() {
     return (
-      <div>
+      <div className="Button">
         <Layout className="site-layout-background">
           <Slider
             menuList={this.state.menuList}
             handlerCick={this.handlerCick}
           ></Slider>
           <Content className="site-layout-background">
-            部分效果同list
             {this.state.curIndex === 0 && (
               <div>
                 <iframe
@@ -29,7 +28,7 @@ export default class Image extends React.Component {
                   id="iframe"
                   className="iframe"
                   title="xxx"
-                  src="https://tympanus.net/Development/HoverEffectIdeas/"
+                  src="https://tympanus.net/Development/IconHoverEffects/#set-9"
                   frameBorder="0"
                 ></iframe>
               </div>
@@ -43,7 +42,7 @@ export default class Image extends React.Component {
                   id="iframe"
                   className="iframe"
                   title="xxx"
-                  src="https://codepen.io/AdamCCFC/details/WvzBKq"
+                  src=""
                   frameBorder="0"
                 ></iframe>
               </div>
