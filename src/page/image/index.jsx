@@ -6,7 +6,7 @@ export default class Image extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuList: ['悬停出现遮罩和标题', '悬停缩放'],
+      menuList: ['效果一', '效果二'],
       curIndex: 0
     };
   }
