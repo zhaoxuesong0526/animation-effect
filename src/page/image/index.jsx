@@ -30,6 +30,7 @@ export default class Image extends React.Component {
                   className="iframe"
                   title="xxx"
                   src="https://tympanus.net/Development/HoverEffectIdeas/"
+                  
                   frameBorder="0"
                 ></iframe>
               </div>

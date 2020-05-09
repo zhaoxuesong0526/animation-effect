@@ -19,6 +19,7 @@ export default class List extends React.Component {
             handlerCick={this.handlerCick}
           ></Slider>
           <Content className="site-layout-background">
+            <div>部分效果同list</div>
             {this.state.curIndex === 0 && (
               <iframe
                 ref={(ref) => {
