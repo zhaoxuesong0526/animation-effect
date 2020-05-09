@@ -7,7 +7,7 @@ export default class Button extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuList: ['效果一', '效果二', '效果三'],
+      menuList: ['效果一', '效果二', '效果三','效果四'],
       curIndex: 0
     };
   }
@@ -62,6 +62,22 @@ export default class Button extends React.Component {
                 ></iframe>
               </div>
             )}
+            {this.state.curIndex === 3 && (
+              // https://codepen.io/ahmedbeheiry/pen/aBdezY
+              <div>
+                <iframe
+                  ref={(ref) => {
+                    this.iframe = ref;
+                  }}
+                  id="iframe"
+                  className="iframe"
+                  title="xxx"
+                  src="https://cdpn.io/ahmedbeheiry/fullpage/aBdezY"
+                  frameBorder="0"
+                ></iframe>
+              </div>
+            )}
+
           </Content>
         </Layout>
       </div>
