@@ -6,7 +6,7 @@ export default class Nav extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      menuList: ['效果一', '效果二', '效果三'],
+      menuList: ['效果一'],
       curIndex: 0
     };
   }

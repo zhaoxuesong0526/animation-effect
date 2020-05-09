@@ -6,7 +6,7 @@ export default class Image extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuList: ['效果一', '效果二', '效果三'],
+      menuList: ['效果一'],
       curIndex: 0
     };
   }
@@ -19,6 +19,7 @@ export default class Image extends React.Component {
             handlerCick={this.handlerCick}
           ></Slider>
           <Content className="site-layout-background">
+            <h1>123</h1>
             {this.state.curIndex === 0 && (
               <div>
                 <iframe
@@ -33,20 +34,7 @@ export default class Image extends React.Component {
                 ></iframe>
               </div>
             )}
-            {this.state.curIndex === 1 && (
-              <div>
-                <iframe
-                  ref={(ref) => {
-                    this.iframe = ref;
-                  }}
-                  id="iframe"
-                  className="iframe"
-                  title="xxx"
-                  src="//ianlunn.github.io/Hover/"
-                  frameBorder="0"
-                ></iframe>
-              </div>
-            )}
+          
           </Content>
         </Layout>
       </div>
