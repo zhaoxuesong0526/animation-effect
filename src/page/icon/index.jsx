@@ -51,6 +51,7 @@ export default class Button extends React.Component {
         </Layout>
       </div>
     );
+      
   }
   handlerCick = (item, index) => {
     console.log(item);
