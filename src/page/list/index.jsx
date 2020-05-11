@@ -6,7 +6,7 @@ export default class List extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuList: ['效果一', '效果二', '效果三', '效果四', '效果五', '效果六',],
+      menuList: ['效果一', '效果二', '效果三', '效果四', '效果五', '效果六','效果七',],
       curIndex: 0
     };
   }
@@ -21,30 +21,36 @@ export default class List extends React.Component {
           <Content className="site-layout-background">
             <div>部分效果同list</div>
             {this.state.curIndex === 0 && (
-              <iframe
-                ref={(ref) => {
-                  this.iframe = ref;
-                }}
-                id="iframe"
-                className="iframe"
-                title="xxx"
-                src="http://www.imagehover.io/"
-                frameBorder="0"
-              ></iframe>
+              <div>
+                 <a href="http://www.imagehover.io/" target="_blank" rel="noopener noreferrer">点击</a>
+                <iframe
+                  ref={(ref) => {
+                    this.iframe = ref;
+                  }}
+                  id="iframe"
+                  className="iframe"
+                  title="xxx"
+                  src="//www.imagehover.io/"
+                  frameBorder="0"
+                ></iframe>
+              </div>
             )}
             {this.state.curIndex === 1 && (
-              <iframe
-                className="iframe"
-                title="xxx"
-                src="http://hasinhayder.github.io/ImageCaptionHoverAnimation/index2.html"
-                frameBorder="0"
-              ></iframe>
+                <div>
+                  <a href="http://hasinhayder.github.io/ImageCaptionHoverAnimation/index2.html" target="_blank" rel="noopener noreferrer">点击</a>
+                  <iframe
+                    className="iframe"
+                    title="xxx"
+                    src="//hasinhayder.github.io/ImageCaptionHoverAnimation/index2.html"
+                    frameBorder="0"
+                  ></iframe>
+                </div>
             )}
             {this.state.curIndex === 2 && (
               <iframe
                 className="iframe"
                 title="xxx"
-                src=" https://cdpn.io/noeldelgado/fullembedgrid/PZJGLx?type=embed&animations=run"
+                src="//cdpn.io/noeldelgado/fullembedgrid/PZJGLx?type=embed&animations=run"
                 frameBorder="0"
               ></iframe>
             )}
@@ -61,14 +67,14 @@ export default class List extends React.Component {
               <iframe
                 className="iframe"
                 title="xxx"
-                src=" https://cdpn.io/nxworld/fullpage/ZYNOBZ"
+                src="//cdpn.io/nxworld/fullpage/ZYNOBZ"
                 frameBorder="0"
               ></iframe>
             )}
             {this.state.curIndex === 5 && (
               <iframe
                 id="iFrameKey-d38279a7-ec3f-833d-4116-3c9fa3a7439a"
-                src="https://cdpn.io/noeldelgado/fullpage/pGwFx"
+                src="//cdpn.io/noeldelgado/fullpage/pGwFx"
                 name="CodePen"
                 allowfullscreen="true"
                 sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts"
@@ -79,7 +85,16 @@ export default class List extends React.Component {
                 frameBorder="0"
               ></iframe>
             )}
-           
+
+          {this.state.curIndex === 6 && (
+              <iframe
+                className="iframe"
+                title="xxx"
+                src="//demo.lanrenzhijia.com/demo/41/4126/demo/open.html"
+                frameBorder="0"
+              ></iframe>
+            )}
+          
            
           </Content>
         </Layout>

@@ -12,7 +12,7 @@ export default class Slider extends React.Component{
   }
   render() {
     return (
-      <div className="Button">
+      <div  className="Button">
         <Layout className="site-layout-background">
           <LeftSlider
             menuList={this.state.menuList}
@@ -21,6 +21,7 @@ export default class Slider extends React.Component{
           <Content className="site-layout-background">
             {this.state.curIndex === 0 && (
               <div>
+                <a href="https://www.swiper.com.cn/demo/web/index.html" target="_blank" rel="noopener noreferrer">点击</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;

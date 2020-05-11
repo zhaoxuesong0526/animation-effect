@@ -19,31 +19,31 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <div className="App-header"> 
-          <div className="logo"><img src={logo} alt="logo"/></div>
+          <div className="logo"><img src='https://nwzimg.clouddream.net/picture/Rr5ri-lRMkmO6yp2AnWuVw/W4ktuFRpyUKV52yoWVXVig.png' alt="logo"/></div>
           <header className="header">
-            <NavLink to="/home">Home</NavLink>
-            <NavLink to="/button">Button</NavLink>
-            <NavLink to="/container">Container</NavLink>
-            <NavLink to="/image">Image</NavLink>
-            <NavLink to="/list">List</NavLink>
-            <NavLink to="/nav">Nav</NavLink>
-            <NavLink to="/slider">Slider</NavLink>
-            <NavLink to="/text">Text</NavLink>
-            <NavLink to="/icon">Icon</NavLink>
+            <NavLink to="/hover-effect/home">Home</NavLink>
+            <NavLink to="/hover-effect/button">Button</NavLink>
+            <NavLink to="/hover-effect/container">Container</NavLink>
+            <NavLink to="/hover-effect/image">Image</NavLink>
+            <NavLink to="/hover-effect/list">List</NavLink>
+            <NavLink to="/hover-effect/nav">Nav</NavLink>
+            <NavLink to="/hover-effect/slider">Slider</NavLink>
+            <NavLink to="/hover-effect/text">Text</NavLink>
+            <NavLink to="/hover-effect/icon">Icon</NavLink>
           </header>
         </div>
         <div className="App-container">
         <Switch>
-          <Redirect from="/" exact to="/home"></Redirect>
-          <Route path="/home" component={Home} ></Route>
-          <Route path="/button" component={Button} ></Route>
-          <Route path="/container" component={Container} ></Route>
-          <Route path="/image"  component={Image} ></Route>
-          <Route path="/list"  component={List} ></Route>
-          <Route path="/nav"  component={Nav} ></Route>
-          <Route path="/slider"  component={Slider} ></Route>
-          <Route path="/text" component={Text} ></Route>
-          <Route path="/icon" component={Icon} ></Route>
+          <Redirect from="/hover-effect" exact to="/hover-effect/home"></Redirect>
+          <Route path="/hover-effect/home" component={Home} ></Route>
+          <Route path="/hover-effect/button" component={Button} ></Route>
+          <Route path="/hover-effect/container" component={Container} ></Route>
+          <Route path="/hover-effect/image"  component={Image} ></Route>
+          <Route path="/hover-effect/list"  component={List} ></Route>
+          <Route path="/hover-effect/nav"  component={Nav} ></Route>
+          <Route path="/hover-effect/slider"  component={Slider} ></Route>
+          <Route path="/hover-effect/text" component={Text} ></Route>
+          <Route path="/hover-effect/icon" component={Icon} ></Route>
         </Switch>
         </div>
       </BrowserRouter>

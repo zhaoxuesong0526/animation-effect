@@ -6,7 +6,7 @@ export default class Image extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuList: ['悬停出现遮罩和标题', '悬停缩放'],
+      menuList: ['效果一', '效果二'],
       curIndex: 0
     };
   }
@@ -44,7 +44,7 @@ export default class Image extends React.Component {
                   id="iframe"
                   className="iframe"
                   title="xxx"
-                  src="https://codepen.io/AdamCCFC/embed/WvzBKq/?theme-id=modal"
+                  src="http://gudh.github.io/ihover/dist/"
                   frameBorder="0"
                 ></iframe>
               </div>

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 import './index.scss';
 import Slider from '../../components/slider';
@@ -20,8 +21,9 @@ export default class Button extends React.Component {
             handlerCick={this.handlerCick}
           ></Slider>
           <Content className="site-layout-background">
-           {this.state.curIndex === 0 && (
+            {this.state.curIndex === 0 && (
               <div>
+                <a href="//ianlunn.github.io/Hover/" target="_blank" rel="noopener noreferrer">点击</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -36,6 +38,7 @@ export default class Button extends React.Component {
             )}
             {this.state.curIndex === 1 && (
               <div>
+                <a href="https://tympanus.net/Development/CreativeButtons/" target="_blank" rel="noopener noreferrer">点击</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -50,6 +53,7 @@ export default class Button extends React.Component {
             )}
             {this.state.curIndex === 2 && (
               <div>
+                <a href="https://codepen.io/davidicus/full/emgQKJ" target="_blank" rel="noopener noreferrer">点击</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -65,6 +69,7 @@ export default class Button extends React.Component {
             {this.state.curIndex === 3 && (
               // https://codepen.io/ahmedbeheiry/pen/aBdezY
               <div>
+                 <a href="https://cdpn.io/ahmedbeheiry/fullpage/aBdezY" target="_blank" rel="noopener noreferrer">点击</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -77,6 +82,23 @@ export default class Button extends React.Component {
                 ></iframe>
               </div>
             )}
+                {this.state.curIndex === 3 && (
+              // https://codepen.io/ahmedbeheiry/pen/aBdezY
+              <div>
+                 <a href="https://cdpn.io/foxeisen/fullembedgrid/bqZxLa?type=embed&animations=run" target="_blank" rel="noopener noreferrer">点击</a>
+                <iframe
+                  ref={(ref) => {
+                    this.iframe = ref;
+                  }}
+                  id="iframe"
+                  className="iframe"
+                  title="xxx"
+                  src="https://cdpn.io/foxeisen/fullembedgrid/bqZxLa?type=embed&animations=run"
+                  frameBorder="0"
+                ></iframe>
+              </div>
+            )}
+            
 
           </Content>
         </Layout>
