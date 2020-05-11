@@ -22,6 +22,7 @@ export default class Nav extends React.Component{
             {this.state.curIndex === 0 && (
               // http://www.jq22.com/jquery-info20775
               <div>
+                <a href="http://www.jq22.com/demo/jqueryFloor201804181627" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -36,6 +37,7 @@ export default class Nav extends React.Component{
             )}
              {this.state.curIndex === 1 && (
               <div>
+                <a href="https://demo.demohuo.top/jquery/23/2348/demo/" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -50,6 +52,7 @@ export default class Nav extends React.Component{
             )}
             {this.state.curIndex === 2 && (
               <div>
+                <a href="http://www.htmleaf.com/Demo/2014100437.html" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -64,6 +67,7 @@ export default class Nav extends React.Component{
             )}
             {this.state.curIndex === 3 && (
               <div>
+                <a href="http://www.jq22.com/webqd6255" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -78,6 +82,7 @@ export default class Nav extends React.Component{
             )}
             {this.state.curIndex === 4 && (
               <div>
+                <a href="http://www.jq22.com/yanshi11012" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;

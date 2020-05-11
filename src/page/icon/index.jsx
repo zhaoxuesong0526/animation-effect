@@ -21,6 +21,7 @@ export default class Button extends React.Component {
           <Content className="site-layout-background">
             {this.state.curIndex === 0 && (
               <div>
+                <a href="https://tympanus.net/Development/IconHoverEffects/#set-9" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;

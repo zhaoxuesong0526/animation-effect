@@ -57,6 +57,7 @@ export default class Text extends React.Component {
             {this.state.curIndex === 1 && (
             <div>
               {/* https://codepen.io/P233/pen/EaGAl */}
+              <a href="https://cdpn.io/P233/fullpage/EaGAl" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -72,6 +73,7 @@ export default class Text extends React.Component {
           {this.state.curIndex ===2 && (
             <div>
               {/* http://www.jq22.com/jquery-info21488 */}
+              <a href="http://www.jq22.com/demo/jquerycounterup201905121719" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -86,6 +88,7 @@ export default class Text extends React.Component {
           )}
           {this.state.curIndex ===3 && (
             <div>
+              <a href="https://onaircode.com/text-hover-effects-css-animation-snippet/" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;

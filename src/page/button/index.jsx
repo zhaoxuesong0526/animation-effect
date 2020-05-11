@@ -8,7 +8,7 @@ export default class Button extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuList: ['效果一', '效果二', '效果三','效果四'],
+      menuList: ['效果一', '效果二', '效果三','效果四', '效果五'],
       curIndex: 0
     };
   }
@@ -21,9 +21,10 @@ export default class Button extends React.Component {
             handlerCick={this.handlerCick}
           ></Slider>
           <Content className="site-layout-background">
+
             {this.state.curIndex === 0 && (
               <div>
-                <a href="//ianlunn.github.io/Hover/" target="_blank" rel="noopener noreferrer">点击</a>
+                <a href="//ianlunn.github.io/Hover/" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -38,7 +39,7 @@ export default class Button extends React.Component {
             )}
             {this.state.curIndex === 1 && (
               <div>
-                <a href="https://tympanus.net/Development/CreativeButtons/" target="_blank" rel="noopener noreferrer">点击</a>
+                <a href="https://tympanus.net/Development/CreativeButtons/" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -53,7 +54,7 @@ export default class Button extends React.Component {
             )}
             {this.state.curIndex === 2 && (
               <div>
-                <a href="https://codepen.io/davidicus/full/emgQKJ" target="_blank" rel="noopener noreferrer">点击</a>
+                <a href="https://codepen.io/davidicus/full/emgQKJ" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -69,7 +70,7 @@ export default class Button extends React.Component {
             {this.state.curIndex === 3 && (
               // https://codepen.io/ahmedbeheiry/pen/aBdezY
               <div>
-                 <a href="https://cdpn.io/ahmedbeheiry/fullpage/aBdezY" target="_blank" rel="noopener noreferrer">点击</a>
+                 <a href="https://cdpn.io/ahmedbeheiry/fullpage/aBdezY" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -82,10 +83,10 @@ export default class Button extends React.Component {
                 ></iframe>
               </div>
             )}
-                {this.state.curIndex === 3 && (
+                {this.state.curIndex === 4 && (
               // https://codepen.io/ahmedbeheiry/pen/aBdezY
               <div>
-                 <a href="https://cdpn.io/foxeisen/fullembedgrid/bqZxLa?type=embed&animations=run" target="_blank" rel="noopener noreferrer">点击</a>
+                 <a href="https://cdpn.io/foxeisen/fullembedgrid/bqZxLa?type=embed&animations=run" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;

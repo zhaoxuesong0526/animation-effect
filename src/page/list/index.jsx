@@ -22,7 +22,7 @@ export default class List extends React.Component {
             <div>部分效果同list</div>
             {this.state.curIndex === 0 && (
               <div>
-                 <a href="http://www.imagehover.io/" target="_blank" rel="noopener noreferrer">点击</a>
+                 <a href="http://www.imagehover.io/" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -37,7 +37,7 @@ export default class List extends React.Component {
             )}
             {this.state.curIndex === 1 && (
                 <div>
-                  <a href="http://hasinhayder.github.io/ImageCaptionHoverAnimation/index2.html" target="_blank" rel="noopener noreferrer">点击</a>
+                  <a href="http://hasinhayder.github.io/ImageCaptionHoverAnimation/index2.html" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                   <iframe
                     className="iframe"
                     title="xxx"
@@ -47,52 +47,69 @@ export default class List extends React.Component {
                 </div>
             )}
             {this.state.curIndex === 2 && (
-              <iframe
-                className="iframe"
-                title="xxx"
-                src="//cdpn.io/noeldelgado/fullembedgrid/PZJGLx?type=embed&animations=run"
-                frameBorder="0"
-              ></iframe>
+              <div>
+                <a href="//cdpn.io/noeldelgado/fullembedgrid/PZJGLx?type=embed&animations=run" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
+                <iframe
+                  className="iframe"
+                  title="xxx"
+                  src="//cdpn.io/noeldelgado/fullembedgrid/PZJGLx?type=embed&animations=run"
+                  frameBorder="0"
+                ></iframe>
+              </div>
             )}
             {this.state.curIndex === 3 && (
-              <iframe
-                className="iframe"
-                title="xxx"
-                src="https://cdpn.io/chrisdothtml/fullpage/OVmgwK"
-                frameBorder="0"
-              ></iframe>
+              <div>
+                <a href="https://cdpn.io/chrisdothtml/fullpage/OVmgwK" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
+                <iframe
+                  className="iframe"
+                  title="xxx"
+                  src="https://cdpn.io/chrisdothtml/fullpage/OVmgwK"
+                  frameBorder="0"
+                ></iframe>
+              </div>
             )}
 
             {this.state.curIndex === 4 && (
-              <iframe
-                className="iframe"
-                title="xxx"
-                src="//cdpn.io/nxworld/fullpage/ZYNOBZ"
-                frameBorder="0"
-              ></iframe>
+              <div>
+                <a href="//cdpn.io/nxworld/fullpage/ZYNOBZ" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
+                <iframe
+                  className="iframe"
+                  title="xxx"
+                  src="//cdpn.io/nxworld/fullpage/ZYNOBZ"
+                  frameBorder="0"
+                ></iframe>
+              </div>
             )}
             {this.state.curIndex === 5 && (
-              <iframe
-                id="iFrameKey-d38279a7-ec3f-833d-4116-3c9fa3a7439a"
-                src="//cdpn.io/noeldelgado/fullpage/pGwFx"
-                name="CodePen"
-                allowfullscreen="true"
-                sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts"
-                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr"
-                allowtransparency="true"
-                allowpaymentrequest="true"
-                class="result-iframe"
-                frameBorder="0"
-              ></iframe>
+              <div>
+                <a href="//cdpn.io/noeldelgado/fullpage/pGwFx" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
+                <iframe
+                  id="iFrameKey-d38279a7-ec3f-833d-4116-3c9fa3a7439a"
+                  src="//cdpn.io/noeldelgado/fullpage/pGwFx"
+                  name="CodePen"
+                  allowfullscreen="true"
+                  sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts"
+                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr"
+                  allowtransparency="true"
+                  allowpaymentrequest="true"
+                  class="result-iframe"
+                  frameBorder="0"
+                ></iframe>
+              </div>
+              
             )}
 
-          {this.state.curIndex === 6 && (
-              <iframe
-                className="iframe"
-                title="xxx"
-                src="//demo.lanrenzhijia.com/demo/41/4126/demo/open.html"
-                frameBorder="0"
-              ></iframe>
+            {this.state.curIndex === 6 && (
+              <div>
+                <a href="//demo.lanrenzhijia.com/demo/41/4126/demo/open.html" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
+                <iframe
+                  className="iframe"
+                  title="xxx"
+                  src="//demo.lanrenzhijia.com/demo/41/4126/demo/open.html"
+                  frameBorder="0"
+                ></iframe>
+              </div>
+              
             )}
           
            

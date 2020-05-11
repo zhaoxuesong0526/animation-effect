@@ -22,6 +22,7 @@ export default class Image extends React.Component {
             部分效果同list
             {this.state.curIndex === 0 && (
               <div>
+                <a href="https://tympanus.net/Development/HoverEffectIdeas/" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -37,6 +38,7 @@ export default class Image extends React.Component {
             )}
             {this.state.curIndex === 1 && (
               <div>
+                <a href="http://gudh.github.io/ihover/dist/" target="_blank" rel="noopener noreferrer">内容未加载出时，可点击此处跳转</a>
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
