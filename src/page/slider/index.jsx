@@ -29,13 +29,18 @@ export default class Slider extends React.Component{
                   id="iframe"
                   className="iframe"
                   title="xxx"
+<<<<<<< HEAD
                   src="https://www.swiper.com.cn/demo/web/index.html"
+=======
+                  src=""
+>>>>>>> 4413172a2bdb9b32efa3ab6b77dc7ee9aac9915f
                   frameBorder="0"
                 ></iframe>
               </div>
             )}
             {this.state.curIndex === 1 && (
               <div>
+<<<<<<< HEAD
                 <iframe
                   ref={(ref) => {
                     this.iframe = ref;
@@ -46,6 +51,14 @@ export default class Slider extends React.Component{
                   src=""
                   frameBorder="0"
                 ></iframe>
+=======
+                <a style={{ display: 'block'}} target="_blank" href="https://www.jssor.com/demos/nearby-image-partial-visible-slider.slider">https://www.jssor.com/demos/nearby-image-partial-visible-slider.slider</a>
+                <a style={{ display: 'block'}} target="_blank" href="https://www.jssor.com/demos/scrolling-logo-thumbnail-slider.slider">https://www.jssor.com/demos/scrolling-logo-thumbnail-slider.slider</a>
+                <a style={{ display: 'block' }} target="_blank" href="https://www.jssor.com/demos/image-gallery-with-vertical-thumbnail.slider">https://www.jssor.com/demos/image-gallery-with-vertical-thumbnail.slider</a>
+                <a style={{ display: 'block' }} target="_blank" href="https://www.jssor.com/slideshow/x-zoom.html">https://www.jssor.com/slideshow/x-zoom.html</a>
+                <a style={{ display: 'block' }} target="_blank" href="https://www.jssor.com/skins/thumbnail/thumbnail-skin-121.slider/=skin">https://www.jssor.com/skins/thumbnail/thumbnail-skin-121.slider/=skin</a>
+                            
+>>>>>>> 4413172a2bdb9b32efa3ab6b77dc7ee9aac9915f
               </div>
             )}
           </Content>
